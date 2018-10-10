@@ -26,7 +26,9 @@ public class BoundedResource {
     private void doUse() throws InterruptedException {
 
         Log.println("BEGIN: used = " + (permits - semaphore.availablePermits()));
+
         Thread.sleep(random.nextInt(500));
+
         Log.println("END:   used = " + (permits - semaphore.availablePermits()));
     }
 }
