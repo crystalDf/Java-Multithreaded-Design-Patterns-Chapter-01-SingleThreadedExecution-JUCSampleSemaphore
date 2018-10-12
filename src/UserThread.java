@@ -14,7 +14,6 @@ public class UserThread extends Thread {
     public void run() {
         try {
             while (true) {
-
                 boundedResource.use();
 
                 Thread.sleep(random.nextInt(3000));
