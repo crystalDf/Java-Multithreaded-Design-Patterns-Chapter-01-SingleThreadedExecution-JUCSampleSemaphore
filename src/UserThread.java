@@ -13,7 +13,6 @@ public class UserThread extends Thread {
     @Override
     public void run() {
         try {
-
             while (true) {
                 boundedResource.use();
 
