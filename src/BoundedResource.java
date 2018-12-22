@@ -13,6 +13,7 @@ public class BoundedResource {
     }
 
     public void use() throws InterruptedException {
+
         semaphore.acquire();
 
         try {
